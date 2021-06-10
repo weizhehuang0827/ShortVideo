@@ -1,2 +1,2 @@
 # ShortVideo
-a short video webpage demo using python django
+a short video webpage using python django 

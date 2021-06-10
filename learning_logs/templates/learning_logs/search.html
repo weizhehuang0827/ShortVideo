@@ -1,0 +1,40 @@
+{% extends "learning_logs/base.html" %}
+
+{% load bootstrap4 %}
+
+{% block page_header %}
+  <h3>Search Videos</h3>
+  
+{% endblock page_header %}
+
+{% block content %}
+<div class="jumbotron">
+  <form action="{% url 'learning_logs:search'%}" method='post'>
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    {% buttons %}
+        <button name="submit" class="btn btn-primary">Search</button>
+    {% endbuttons %}
+  </form>
+<div/>
+<ul>
+  {% for video in videos %}
+    <div class="card mb-3">
+      <h4 class="card-header">
+        {{ video.name }}
+        <small>{{ video.date_added|date:'M d, Y' }}</small>
+        <small>{{video.owner}}</small>
+      </h4>
+      <div class="card-body">
+        {{ video.introduction|linebreaks }}
+      </div>
+      <div class="card-body">
+        <video width="320" height="240" controls>
+            <source src="{{MEDIA_URL}}{{video.url}}" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  {% empty %}
+    <p>Sorry,we are unable to search any video related to that.</p>
+  {% endfor %}
+{% endblock content %}
