@@ -1,2 +1,46 @@
-# ShortVideo
-a short video webpage using python django 
+# 一个短视频共享网站Demo
+（注意：本项目在`python 3.9.4`环境下，用其他`python`版本可能会有问题）
+
+
+
+首先使用`git clone`复制到本地
+
+```
+git clone git@github.com:weizhehuang0827/ShortVideo.git
+```
+
+`cd`切换到该项目主目录下，执行
+
+```
+python -m venv ll_env
+```
+
+即可在主目录下创建一个`python`虚拟环境，当前目录下就会有一个名为`ll_env`的目录，注意这里需要确认已经安装了`venv`库。
+
+再在同一目录下执行该虚拟环境
+
+**Windows**系统下为
+
+```
+ll_env\Scripts\activate
+```
+
+**Linux**系统下为
+
+```
+source ll_env/bin/activate
+```
+
+再下载项目依赖的包
+
+```
+pip install -r requirements.txt
+```
+
+之后就可以启动`django`服务器
+
+```
+python manage.py runserver
+```
+
+接下来就可以通过浏览器访问`http://localhost:8000/`来访问项目的web页面
