@@ -1,4 +1,4 @@
-{% extends "learning_logs/base.html" %}
+{% extends "short_video/base.html" %}
 
 {% load bootstrap4 %}
 
@@ -16,7 +16,7 @@
     {% endbuttons %}
     
     <input type="hidden" name="next" 
-      value="{% url 'learning_logs:index' %}" />
+      value="{% url 'short_video:index' %}" />
   </form>
     
 {% endblock content %}
