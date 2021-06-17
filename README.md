@@ -1,7 +1,16 @@
 # 一个短视频共享网站Demo
+
+
+
+## 介绍
+
+本项目为USTC CS 《数据库系统及应用》课程的大作业
+
+
+
+## 使用方法
+
 （注意：本项目在`python 3.9.4`环境下，用其他`python`版本可能会有问题）
-
-
 
 首先使用`git clone`复制到本地
 
@@ -35,6 +44,12 @@ source ll_env/bin/activate
 
 ```
 pip install -r requirements.txt
+```
+
+再应用数据库的迁移
+
+```
+python manage.py migrate
 ```
 
 之后就可以启动`django`服务器
