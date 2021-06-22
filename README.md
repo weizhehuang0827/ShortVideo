@@ -4,7 +4,7 @@
 
 ## 介绍
 
-本项目为USTC CS 《数据库系统及应用》课程的大作业（本项目已经部署到[Heroku](https://www.heroku.com/)上，网址为https://hwzzlzlyh-short-video.herokuapp.com/，仅作个人学习与测试使用！）
+本项目为USTC CS 《数据库系统及应用》课程的大作业。本项目已经部署到[Heroku](https://www.heroku.com/)上，网址为https://hwzzlzlyh-short-video.herokuapp.com/ （仅作个人学习与测试使用！）
 
 ### 组员
 
